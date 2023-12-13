@@ -1,6 +1,6 @@
 
 # %% Imports
-from utils import DataLoader
+from healthcare.utils import DataLoader
 from interpret.glassbox import (LogisticRegression,
                                 ClassificationTree, 
                                 ExplainableBoostingClassifier)

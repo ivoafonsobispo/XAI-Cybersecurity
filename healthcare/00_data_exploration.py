@@ -1,6 +1,6 @@
 # %% Imports
 import matplotlib.pyplot as plt
-from utils import DataLoader
+from healthcare.utils import DataLoader
 
 # %% Load data
 data_loader = DataLoader()
