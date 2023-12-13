@@ -30,7 +30,7 @@ y_pred = lr.predict(X_test)
 print(f"F1 Score {f1_score(y_test, y_pred, average='macro')}")
 print(f"Accuracy {accuracy_score(y_test, y_pred)}")
 
-# %% Explain local prediction
+# %% Explain local prediction for the first 100 data points
 lr_local = lr.explain_local(X_test[:100], y_test[:100], name='Logistic Regression')
 show(lr_local)
 
@@ -64,3 +64,4 @@ show(ebm_local)
 
 # %% Explain globally
 ebm_global = ebm.explain_global(name='EBM')
+show(ebm_global)
