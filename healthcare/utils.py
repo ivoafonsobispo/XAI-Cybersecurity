@@ -8,7 +8,7 @@ class DataLoader():
     def __init__(self):
         self.data = None
 
-    def load_dataset(self, path="healthcare/data/healthcare-dataset-stroke-data.csv"):
+    def load_dataset(self, path="data/healthcare-dataset-stroke-data.csv"):
         self.data = pd.read_csv(path)
 
     def preprocess_data(self):
